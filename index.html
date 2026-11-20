@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+  <title>
+   Foremost &mdash; Aprovisionamento &amp; Fornecimento
+  </title>
+  <meta content="light" name="color-scheme"/>
+  <meta content="Foremost, Lda. &eacute; uma empresa mo&ccedil;ambicana de Aprovisionamento e Fornecimento, presente no mercado desde 2018, dedicada a conectar empresas a solu&ccedil;&otilde;es, produtos e fornecedores de qualidade." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="assets/icons/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <script>
+   document.documentElement.classList.add('js');
+  </script>
+ </head>
+ <body>
+  <i id="pg">
+  </i>
+  <svg aria-hidden="true" height="0" style="position:absolute" width="0">
+   <defs>
+    <symbol id="a" viewbox="0 0 24 24">
+     <path d="M5 12h14M13 6l6 6-6 6">
+     </path>
+    </symbol>
+    <symbol id="mn" viewbox="0 0 24 24">
+     <path d="M4 7h16M4 12h16M4 17h16">
+     </path>
+    </symbol>
+    <symbol id="bx" viewbox="0 0 24 24">
+     <path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7M12 11v10">
+     </path>
+    </symbol>
+    <symbol id="gl" viewbox="0 0 24 24">
+     <circle cx="12" cy="12" r="9">
+     </circle>
+     <path d="M3 12h18M12 3c3.5 3.5 3.5 14.5 0 18M12 3c-3.5 3.5-3.5 14.5 0 18">
+     </path>
+    </symbol>
+    <symbol id="tg" viewbox="0 0 24 24">
+     <path d="M3 12V4h8l10 10-8 8L3 12zM7.5 7.5h.01">
+     </path>
+    </symbol>
+    <symbol id="lk" viewbox="0 0 24 24">
+     <circle cx="9" cy="12" r="5">
+     </circle>
+     <circle cx="15" cy="12" r="5">
+     </circle>
+    </symbol>
+    <symbol id="sh" viewbox="0 0 24 24">
+     <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM8.5 12l2.5 2.5 4.5-5">
+     </path>
+    </symbol>
+    <symbol id="tr" viewbox="0 0 24 24">
+     <path d="M2 6h11v10H2zM13 9h4l3 3v4h-7">
+     </path>
+     <circle cx="6" cy="18" r="2">
+     </circle>
+     <circle cx="17" cy="18" r="2">
+     </circle>
+    </symbol>
+    <symbol id="sp" viewbox="0 0 24 24">
+     <path d="M3 17l2 3h14l2-3-9-3-9 3zM6 13V8h12v5M12 4v4">
+     </path>
+    </symbol>
+    <symbol id="pl" viewbox="0 0 24 24">
+     <path d="M21 16v-2l-8-5V4a1.5 1.5 0 00-3 0v5l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z">
+     </path>
+    </symbol>
+    <symbol id="c0" viewbox="0 0 24 24">
+     <rect height="12" rx="2" width="18" x="3" y="4">
+     </rect>
+     <path d="M8 20h8M12 16v4">
+     </path>
+    </symbol>
+    <symbol id="c1" viewbox="0 0 24 24">
+     <rect height="13" rx="2" width="18" x="3" y="7">
+     </rect>
+     <path d="M8 3l4 4 4-4">
+     </path>
+    </symbol>
+    <symbol id="c2" viewbox="0 0 24 24">
+     <circle cx="12" cy="5" r="2">
+     </circle>
+     <circle cx="5" cy="19" r="2">
+     </circle>
+     <circle cx="19" cy="19" r="2">
+     </circle>
+     <path d="M12 7v5M12 12l-6 5M12 12l6 5">
+     </path>
+    </symbol>
+    <symbol id="c3" viewbox="0 0 24 24">
+     <path d="M4 20l1-4L16 5l3 3L8 19l-4 1zM14 7l3 3">
+     </path>
+    </symbol>
+    <symbol id="c4" viewbox="0 0 24 24">
+     <path d="M3 11v2a1 1 0 001 1h2l7 4V6L6 10H4a1 1 0 00-1 1zM16 9a4 4 0 010 6M19 7a7 7 0 010 10">
+     </path>
+    </symbol>
+    <symbol id="c5" viewbox="0 0 24 24">
+     <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z">
+     </path>
+    </symbol>
+    <symbol id="c6" viewbox="0 0 24 24">
+     <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z">
+     </path>
+    </symbol>
+    <symbol id="c7" viewbox="0 0 24 24">
+     <path d="M2 19h20M4 19v-3a8 8 0 0116 0v3M12 5v5">
+     </path>
+    </symbol>
+    <symbol id="c8" viewbox="0 0 24 24">
+     <path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z">
+     </path>
+    </symbol>
+    <symbol id="c9" viewbox="0 0 24 24">
+     <path d="M3 12h5M16 12h5M8 8h8v8H8zM12 8V4M9 4h6">
+     </path>
+    </symbol>
+    <symbol id="c10" viewbox="0 0 24 24">
+     <path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 001.3 2.2h12.4a1.5 1.5 0 001.3-2.2L14 9V3M7.5 15h9">
+     </path>
+    </symbol>
+    <symbol id="c11" viewbox="0 0 24 24">
+     <circle cx="12" cy="12" r="3">
+     </circle>
+     <circle cx="12" cy="12" r="6.5">
+     </circle>
+     <path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22M4.9 4.9l2.5 2.5M16.6 16.6l2.5 2.5M4.9 19.1l2.5-2.5M16.6 7.4l2.5-2.5">
+     </path>
+    </symbol>
+    <symbol id="wa" viewbox="0 0 24 24">
+     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+     </path>
+    </symbol>
+    <symbol id="pn" viewbox="0 0 24 24">
+     <path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z">
+     </path>
+     <circle cx="12" cy="9.5" r="2.5">
+     </circle>
+    </symbol>
+   </defs>
+  </svg>
+  <header class="nv">
+   <div class="w">
+    <a aria-label="Foremost" href="#">
+     <img alt="Foremost" src="assets/images/01-foremost-10fac89423.png" style="height:1.6rem;width:auto"/>
+    </a>
+    <nav aria-label="Principal" class="nk">
+     <i class="nb">
+     </i>
+     <a data-en="About us" href="#sobre">
+      Sobre n&oacute;s
+     </a>
+     <a data-en="Services" href="#servicos">
+      Servi&ccedil;os
+     </a>
+     <a data-en="Products" href="#produtos">
+      Produtos
+     </a>
+     <a data-en="Why Foremost" href="#porque">
+      Porqu&ecirc; a Foremost
+     </a>
+     <a data-en="Contacts" href="#contactos">
+      Contactos
+     </a>
+    </nav>
+    <div style="display:flex;gap:.6rem;align-items:center">
+     <button aria-label="Idioma / Language" class="b o sm" id="lg" type="button">
+      <svg class="i">
+       <use href="#gl">
+       </use>
+      </svg>
+      <b>
+       EN
+      </b>
+     </button>
+     <a class="b r hd wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+      <svg class="i wa">
+       <use href="#wa">
+       </use>
+      </svg>
+      <span data-en="Request a quote">
+       Pedir cota&ccedil;&atilde;o
+      </span>
+     </a>
+     <button aria-controls="sm" aria-label="Menu" class="b o sm" id="mbt" type="button">
+      <span data-en="Menu">
+       Menu
+      </span>
+      <i class="sm-ic">
+      </i>
+     </button>
+    </div>
+   </div>
+  </header>
+  <aside aria-hidden="true" id="sm">
+   <div class="sm-bd">
+   </div>
+   <div class="sm-pre" style="background:#b5b5b9">
+   </div>
+   <div class="sm-pre" style="background:#e11d2a">
+   </div>
+   <nav aria-label="Menu" class="sm-p">
+    <button class="b o sm sm-x" type="button">
+     <span data-en="Close">
+      Fechar
+     </span>
+     <i class="sm-ic">
+     </i>
+    </button>
+    <ul class="sm-l">
+     <li>
+      <a href="#">
+       <span class="sm-it" data-en="Home">
+        In&iacute;cio
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#sobre">
+       <span class="sm-it" data-en="About us">
+        Sobre n&oacute;s
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#servicos">
+       <span class="sm-it" data-en="Services">
+        Servi&ccedil;os
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#produtos">
+       <span class="sm-it" data-en="Products">
+        Produtos
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#porque">
+       <span class="sm-it" data-en="Why Foremost">
+        Porqu&ecirc; a Foremost
+       </span>
+      </a>
+     </li>
+     <li>
+      <a href="#contactos">
+       <span class="sm-it" data-en="Contacts">
+        Contactos
+       </span>
+      </a>
+     </li>
+    </ul>
+    <div class="sm-b">
+     <a class="b r sm-c wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+      <span data-en="Request a quote">
+       Pedir cota&ccedil;&atilde;o
+      </span>
+      <svg class="i">
+       <use href="#a">
+       </use>
+      </svg>
+     </a>
+     <div class="sm-s">
+      <h4 data-en="Contacts">
+       Contactos
+      </h4>
+      <a href="mailto:info@foremost.co.mz">
+       info@foremost.co.mz
+      </a>
+      <a href="tel:+258827847870">
+       +258 82 784 7870
+      </a>
+      <a href="tel:+258845502007">
+       +258 84 550 2007
+      </a>
+      <a href="https://www.foremost.co.mz">
+       www.foremost.co.mz
+      </a>
+     </div>
+    </div>
+   </nav>
+  </aside>
+  <main>
+   <section class="hero">
+    <div class="hxs">
+    </div>
+    <div class="w">
+     <div class="hg">
+      <div class="hl">
+       <span class="pill fi" data-en="Procurement &amp; Supply" style="--i:0">
+        Aprovisionamento &amp; Fornecimento
+       </span>
+       <h1 data-en="&lt;span class=ln style=--i:0&gt;&lt;b&gt;A &lt;em&gt;value&lt;/em&gt; company,&lt;/b&gt;&lt;/span&gt;&lt;span class=ln style=--i:1&gt;&lt;b&gt;with &lt;em&gt;values.&lt;/em&gt;&lt;/b&gt;&lt;/span&gt;">
+        <span class="ln" style="--i:0">
+         <b>
+          Uma empresa de
+         </b>
+        </span>
+        <span class="ln" style="--i:1">
+         <b>
+          <em>
+           valor,
+          </em>
+          com
+          <em>
+           valores.
+          </em>
+         </b>
+        </span>
+       </h1>
+       <p class="fi" data-en="We connect global solutions to local needs." style="--i:2">
+        Ligamos solu&ccedil;&otilde;es globais &agrave;s necessidades locais.
+       </p>
+       <div class="fm fi" style="--i:3">
+        <a class="b wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+         <span data-en="Request a quote">
+          Pedir cota&ccedil;&atilde;o
+         </span>
+         <svg class="i">
+          <use href="#a">
+          </use>
+         </svg>
+        </a>
+        <a class="b o wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+         <svg class="i wa">
+          <use href="#wa">
+          </use>
+         </svg>
+         <span>
+          WhatsApp
+         </span>
+        </a>
+       </div>
+       <div class="av fi" style="--i:4">
+        <span>
+         <b style="background:#2b2d33">
+          BH
+         </b>
+         <b style="background:#77777c">
+          SLB
+         </b>
+         <b style="background:var(--red)">
+          MRM
+         </b>
+        </span>
+        <small data-en="Trusted by Baker Hughes, Schlumberger and MRM">
+         Escolhida por Baker Hughes, Schlumberger e MRM
+        </small>
+       </div>
+      </div>
+      <div class="rc">
+       <div class="gv">
+        <canvas aria-label="Globo 3D com rotas de carga para Maputo" id="gc" role="img">
+        </canvas>
+       </div>
+      </div>
+     </div>
+     <div class="st4 st">
+      <div class="sc">
+       <b>
+        <span class="n" data-s="+" data-to="50">
+         50+
+        </span>
+       </b>
+       <span data-en="Leading global brands">
+        Marcas l&iacute;deres globais
+       </span>
+      </div>
+      <div class="sc">
+       <b>
+        <span class="n" data-to="3">
+         3
+        </span>
+       </b>
+       <span data-en="Strategic areas">
+        &Aacute;reas estrat&eacute;gicas
+       </span>
+       <small data-en="ICT, PPE and Industrial Solutions">
+        TIC, EPI e Solu&ccedil;&otilde;es Industriais
+       </small>
+      </div>
+      <div class="sc">
+       <b>
+        <span class="n" data-to="2018">
+         2018
+        </span>
+       </b>
+       <span data-en="In the market since">
+        No mercado desde
+       </span>
+      </div>
+      <div class="sc">
+       <b>
+        <span class="n" data-s="%" data-to="100">
+         100%
+        </span>
+       </b>
+       <span data-en="Quality guaranteed">
+        Qualidade garantida
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sec g2" id="sobre">
+    <div class="w">
+     <div class="mg">
+      <div class="rv">
+       <span class="pill" data-en="About us">
+        Sobre n&oacute;s
+       </span>
+       <h2 data-en="Connecting businesses to &lt;em&gt;quality solutions.&lt;/em&gt;">
+        Ligamos empresas a
+        <em>
+         solu&ccedil;&otilde;es de qualidade.
+        </em>
+       </h2>
+       <p data-en="Foremost, Lda. is a Mozambican Procurement and Supply company, in the market since 2018, dedicated to connecting businesses with quality solutions, products and suppliers, contributing to the efficiency and success of their operations.">
+        A Foremost, Lda. &eacute; uma empresa mo&ccedil;ambicana de Aprovisionamento e Fornecimento, presente no mercado desde 2018, dedicada a conectar empresas a solu&ccedil;&otilde;es, produtos e fornecedores de qualidade, contribuindo para a efici&ecirc;ncia e o sucesso das suas opera&ccedil;&otilde;es.
+       </p>
+       <p data-en="With a committed team and a network of national and international partners and suppliers, we work every day to identify the best solutions, negotiate competitive terms and ensure the supply of goods, materials and services in line with our clients' needs and requirements.">
+        Com uma equipa comprometida e uma rede de parceiros e fornecedores nacionais e internacionais, trabalhamos diariamente para identificar as melhores solu&ccedil;&otilde;es, negociar condi&ccedil;&otilde;es competitivas e assegurar o fornecimento de bens, materiais e servi&ccedil;os de acordo com as necessidades e exig&ecirc;ncias dos nossos clientes.
+       </p>
+       <p data-en="More than a supplier, we strive to be a strategic partner, offering efficient, reliable procurement solutions adapted to the challenges of each project.">
+        Mais do que um fornecedor, procuramos ser um parceiro estrat&eacute;gico, oferecendo solu&ccedil;&otilde;es de aprovisionamento eficientes, fi&aacute;veis e adaptadas aos desafios de cada projecto.
+       </p>
+       <div class="bs">
+        <a class="b r" href="#servicos">
+         <span data-en="Our services">
+          Nossos servi&ccedil;os
+         </span>
+         <svg class="i">
+          <use href="#a">
+          </use>
+         </svg>
+        </a>
+        <a class="b o" data-en="Contacts" href="#contactos">
+         Contactos
+        </a>
+       </div>
+      </div>
+      <div class="mv rv" id="mv">
+       <img alt="Porto com guindastes e contentores" class="on" src="assets/images/02-porto-com-guindastes-e-contentores-eea5d791a7.jpg"/>
+       <img alt="Carga a&eacute;rea num aeroporto ao anoitecer" src="assets/images/03-carga-a-rea-num-aeroporto-ao-anoitecer-6d37a1d6ef.jpg"/>
+       <img alt="Navio porta-contentores no mar" src="assets/images/04-navio-porta-contentores-no-mar-05be7db04e.jpg"/>
+       <div class="mvt" role="tablist">
+        <button aria-selected="true" class="on" data-en="Mission" role="tab" type="button">
+         Miss&atilde;o
+        </button>
+        <button aria-selected="false" data-en="Vision" role="tab" type="button">
+         Vis&atilde;o
+        </button>
+        <button aria-selected="false" data-en="Values" role="tab" type="button">
+         Valores
+        </button>
+       </div>
+       <div class="mvx">
+        <div class="mvp on">
+         <h3 data-en="Our Mission">
+          A Nossa Miss&atilde;o
+         </h3>
+         <p data-en="To provide efficient, competitive and high-quality Procurement and Supply solutions, responding to our clients' needs and requirements through an approach focused on excellence, innovation and trust.">
+          Disponibilizar solu&ccedil;&otilde;es de Aprovisionamento e Fornecimento eficientes, competitivas e de elevada qualidade, respondendo &agrave;s necessidades e exig&ecirc;ncias dos nossos clientes atrav&eacute;s de uma abordagem orientada para a excel&ecirc;ncia, inova&ccedil;&atilde;o e confian&ccedil;a.
+         </p>
+         <p data-en="We are committed to building solid, lasting partnerships, fostering skills development and valuing national potential, contributing responsibly to the economic, industrial and social growth of Mozambique.">
+          Estamos comprometidos em construir parcerias s&oacute;lidas e duradouras, promover o desenvolvimento de compet&ecirc;ncias e valorizar o potencial nacional, contribuindo de forma respons&aacute;vel para o crescimento econ&oacute;mico, industrial e social de Mo&ccedil;ambique.
+         </p>
+        </div>
+        <div class="mvp">
+         <h3 data-en="Our Vision">
+          A Nossa Vis&atilde;o
+         </h3>
+         <p data-en="To be a national benchmark in Procurement and Supply, recognised for the excellence of our products and services, the trust of our clients and partners and our ability to meet the demands of a constantly evolving market.">
+          Ser uma refer&ecirc;ncia nacional em Aprovisionamento e Fornecimento, reconhecida pela excel&ecirc;ncia dos nossos produtos e servi&ccedil;os, pela confian&ccedil;a dos nossos clientes e parceiros e pela capacidade de responder &agrave;s exig&ecirc;ncias de um mercado em constante evolu&ccedil;&atilde;o.
+         </p>
+         <p data-en="We aim to contribute to the industrial development of Mozambique, promoting the growth of local skills, establishing international strategic partnerships and providing competitive, innovative and high value-added solutions.">
+          Ambicionamos contribuir para o desenvolvimento industrial de Mo&ccedil;ambique, promovendo o crescimento de compet&ecirc;ncias locais, estabelecendo parcerias estrat&eacute;gicas internacionais e disponibilizando solu&ccedil;&otilde;es competitivas, inovadoras e de elevado valor acrescentado.
+         </p>
+        </div>
+        <div class="mvp">
+         <h3 data-en="Our Values">
+          Os Nossos Valores
+         </h3>
+         <p data-en="Foremost's values reflect the principles that guide our conduct, underpin our business relationships and define how we work with clients, partners and suppliers.">
+          Os valores da Foremost reflectem os princ&iacute;pios que orientam a nossa conduta, sustentam as nossas rela&ccedil;&otilde;es comerciais e definem a forma como trabalhamos com clientes, parceiros e fornecedores.
+         </p>
+         <p data-en="We believe that sustainable success is built on integrity, trust, excellence and commitment. These principles are present in every decision, negotiation and supply, guiding us in creating lasting relationships and delivering solutions that add value for our clients.">
+          Acreditamos que o sucesso sustent&aacute;vel se constr&oacute;i atrav&eacute;s da integridade, confian&ccedil;a, excel&ecirc;ncia e compromisso. Estes princ&iacute;pios est&atilde;o presentes em cada decis&atilde;o, negocia&ccedil;&atilde;o e fornecimento, orientando-nos na cria&ccedil;&atilde;o de rela&ccedil;&otilde;es duradouras e na entrega de solu&ccedil;&otilde;es que acrescentam valor aos nossos clientes.
+         </p>
+         <div class="chips">
+          <span data-en="Integrity">
+           Integridade
+          </span>
+          <span data-en="Trust">
+           Confian&ccedil;a
+          </span>
+          <span data-en="Excellence">
+           Excel&ecirc;ncia
+          </span>
+          <span data-en="Commitment">
+           Compromisso
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="cl rv">
+      <p data-en="Some clients">
+       Alguns clientes
+      </p>
+      <div class="ll">
+       <div class="lw">
+        <div class="lt">
+         <img alt="Baker Hughes" height="60" src="assets/images/05-baker-hughes-cb23ceb02c.png" style="width:103px;height:60px" width="103"/>
+         <img alt="SGS" height="60" src="assets/images/06-sgs-d5198d1877.png" style="width:121px;height:60px" width="121"/>
+         <img alt="Schlumberger" height="43" src="assets/images/07-schlumberger-01c88b7470.png" style="width:190px;height:43px" width="190"/>
+         <img alt="ICRH" height="60" src="assets/images/08-icrh-73d08e77b7.png" style="width:60px;height:60px" width="60"/>
+         <img alt="Montepuez Ruby Mining" height="60" src="assets/images/09-montepuez-ruby-mining-d74c7451c7.png" style="width:69px;height:60px" width="69"/>
+         <img alt="Gigawatt Mo&ccedil;ambique, SA" height="55" src="assets/images/10-gigawatt-mo-ambique-sa-8b54c0b2e6.png" style="width:190px;height:55px" width="190"/>
+         <img alt="R&ouml;nesans" height="39" src="assets/images/11-r-nesans-7ddf6ea1c7.png" style="width:190px;height:39px" width="190"/>
+         <img alt="MSI &mdash; A Tetra Tech Company" height="60" src="assets/images/12-msi-a-tetra-tech-company-d0b73a817e.png" style="width:171px;height:60px" width="171"/>
+         <img alt="Superfert" height="60" src="assets/images/13-superfert-c01e2990f1.png" style="width:98px;height:60px" width="98"/>
+         <img alt="Mozambique Rovuma Venture" height="60" src="assets/images/14-mozambique-rovuma-venture-700ecd8ef3.png" style="width:190px;height:60px" width="190"/>
+         <img alt="Meridian" height="51" src="assets/images/15-meridian-2fd1d8b90d.png" style="width:190px;height:51px" width="190"/>
+         <img alt="Abaricom" height="60" src="assets/images/16-abaricom-3b72871af2.png" style="width:167px;height:60px" width="167"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="especializacao" style="padding-bottom:2rem">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="Areas of expertise">
+       &Aacute;reas de especializa&ccedil;&atilde;o
+      </span>
+      <h2 data-en="&lt;em&gt;Three strategic areas.&lt;/em&gt;">
+       <em>
+        Tr&ecirc;s &aacute;reas estrat&eacute;gicas.
+       </em>
+      </h2>
+      <p class="ai" data-en="Beyond general Procurement services, Foremost focuses its experience and supply capacity on three strategic business areas:">
+       Para al&eacute;m dos servi&ccedil;os de Aprovisionamento Geral, a Foremost concentra a sua experi&ecirc;ncia e capacidade de fornecimento em tr&ecirc;s &aacute;reas estrat&eacute;gicas de neg&oacute;cio:
+      </p>
+     </div>
+     <div class="ag st">
+      <article class="ac f tl">
+       <div class="ap">
+        <img alt="Equipamentos inform&aacute;ticos e eletr&oacute;nicos" src="assets/images/17-equipamentos-inform-ticos-e-eletr-nicos-d4ec5d61a1.jpg"/>
+        <span class="no">
+         01
+        </span>
+       </div>
+       <div class="ab">
+        <h3 data-en="Information and Communication Technologies (ICT)">
+         Tecnologias de Informa&ccedil;&atilde;o e Comunica&ccedil;&atilde;o (TIC)
+        </h3>
+        <p data-en="Equipment, infrastructure and technology solutions.">
+         Equipamentos, infraestruturas e solu&ccedil;&otilde;es tecnol&oacute;gicas.
+        </p>
+        <i class="bar">
+        </i>
+       </div>
+      </article>
+      <article class="ac f tl">
+       <div class="ap">
+        <img alt="Equipamentos de protec&ccedil;&atilde;o individual" src="assets/images/18-equipamentos-de-protec-o-individual-ce332a4e84.jpg"/>
+        <span class="no">
+         02
+        </span>
+       </div>
+       <div class="ab">
+        <h3 data-en="Personal Protective Equipment (PPE)">
+         Equipamentos de Protec&ccedil;&atilde;o Individual (EPI)
+        </h3>
+        <p data-en="Protection and safety solutions for demanding work environments.">
+         Solu&ccedil;&otilde;es de protec&ccedil;&atilde;o e seguran&ccedil;a para ambientes de trabalho exigentes.
+        </p>
+        <i class="bar">
+        </i>
+       </div>
+      </article>
+      <article class="ac f tl">
+       <div class="ap">
+        <img alt="Materiais el&eacute;ctricos e industriais" src="assets/images/19-materiais-el-ctricos-e-industriais-7d7cba5314.jpg"/>
+        <span class="no">
+         03
+        </span>
+       </div>
+       <div class="ab">
+        <h3 data-en="Industrial Solutions">
+         Solu&ccedil;&otilde;es Industriais
+        </h3>
+        <p data-en="Products, equipment and components for industrial operations.">
+         Produtos, equipamentos e componentes destinados &agrave;s opera&ccedil;&otilde;es industriais.
+        </p>
+        <i class="bar">
+        </i>
+       </div>
+      </article>
+     </div>
+     <div class="sx rv">
+      <p data-en="Throughout our activity we have been supporting companies and projects with high operational standards, providing supply solutions for the sectors of:">
+       Ao longo da nossa atividade temos vindo a apoiar empresas e projectos de elevados padr&otilde;es de exig&ecirc;ncia operacional, disponibilizando solu&ccedil;&otilde;es de fornecimento para os sectores de:
+      </p>
+      <div class="chips">
+       <span>
+        Oil &amp; Gas
+       </span>
+       <span data-en="Mining">
+        Minera&ccedil;&atilde;o
+       </span>
+       <span data-en="Energy">
+        Energia
+       </span>
+       <span data-en="Construction">
+        Constru&ccedil;&atilde;o
+       </span>
+       <span data-en="Industry">
+        Ind&uacute;stria
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sec" style="padding-top:2rem">
+    <div class="w">
+     <div class="cm rv">
+      <span class="pill" data-en="Our Commitment">
+       O Nosso Compromisso
+      </span>
+      <p class="big" data-en="At Foremost, we believe every supply represents an opportunity to build lasting relationships based on trust, quality, transparency and service excellence. &lt;span class=cn2&gt;Our commitment is to provide clients with competitive solutions, access to international manufacturers and suppliers, and a close, professional, results-oriented service.&lt;/span&gt;">
+       Na Foremost, acreditamos que cada fornecimento representa uma oportunidade para construir rela&ccedil;&otilde;es duradouras, baseadas na confian&ccedil;a, qualidade, transpar&ecirc;ncia e excel&ecirc;ncia no servi&ccedil;o.
+       <span class="cn2">
+        O nosso compromisso &eacute; proporcionar aos clientes solu&ccedil;&otilde;es competitivas, acesso a fabricantes e fornecedores internacionais e um servi&ccedil;o pr&oacute;ximo, profissional e orientado para resultados.
+       </span>
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="servicos">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="Our services">
+       Nossos servi&ccedil;os
+      </span>
+      <h2 data-en="From supplier to your door,&lt;br&gt;on cost, quality and price.">
+       Do fornecedor &agrave; sua porta,
+       <br/>
+       com custo, qualidade e pre&ccedil;o.
+      </h2>
+      <p data-en="We identify suppliers, negotiate terms and deliver by air, sea and road.">
+       Identificamos fornecedores, negociamos condi&ccedil;&otilde;es e entregamos por via a&eacute;rea, mar&iacute;tima e rodovi&aacute;ria.
+      </p>
+     </div>
+     <div class="sg st">
+      <article class="sv tl">
+       <div>
+        <div class="si">
+         <img alt="Equipa a verificar carga num contentor" src="assets/images/20-equipa-a-verificar-carga-num-contentor-4d6c068954.jpg"/>
+         <span data-en="Suppliers">
+          Fornecedores
+         </span>
+        </div>
+        <h3 data-en="Procurement">
+         Aprovisionamento
+        </h3>
+        <p data-en="Our experience is in the identification of suppliers, goods and services, in the negotiation of prices, terms and conditions and in delivery.">
+         A nossa experi&ecirc;ncia &eacute; na identifica&ccedil;&atilde;o de fornecedores, bens e servi&ccedil;os, na negocia&ccedil;&atilde;o de pre&ccedil;os, termos e condi&ccedil;&otilde;es e na entrega.
+        </p>
+       </div>
+       <a class="lm wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+        <span data-en="Request a quote">
+         Pedir cota&ccedil;&atilde;o
+        </span>
+        <svg class="i">
+         <use href="#a">
+         </use>
+        </svg>
+       </a>
+      </article>
+      <article class="sv tl">
+       <div>
+        <div class="si">
+         <img alt="Colaboradores a movimentar paletes" src="assets/images/21-colaboradores-a-movimentar-paletes-97918d24af.jpg"/>
+         <span data-en="Brands and partnerships">
+          Marcas e parcerias
+         </span>
+        </div>
+        <h3 data-en="Trading">
+         Comercializa&ccedil;&atilde;o
+        </h3>
+        <p data-en="We sell high quality products through an efficient choice of brands, partnerships and trends.">
+         Comercializamos produtos de alta qualidade atrav&eacute;s de uma escolha eficiente de marcas, parcerias e tend&ecirc;ncias.
+        </p>
+       </div>
+       <a class="lm wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+        <span data-en="Request a quote">
+         Pedir cota&ccedil;&atilde;o
+        </span>
+        <svg class="i">
+         <use href="#a">
+         </use>
+        </svg>
+       </a>
+      </article>
+      <article class="sv tl">
+       <div>
+        <div class="si">
+         <img alt="Armaz&eacute;m com paletes e tapetes rolantes" src="assets/images/22-armaz-m-com-paletes-e-tapetes-rolantes-825370c49c.jpg"/>
+         <span data-en="Cost, quality, price">
+          Custo, qualidade, pre&ccedil;o
+         </span>
+        </div>
+        <h3 data-en="Supply">
+         Fornecimento
+        </h3>
+        <p data-en="We focus on effective and economical supply plan strategies in terms of cost, quality and price.">
+         Focamo-nos em estrat&eacute;gias eficazes e econ&oacute;micas do plano de fornecimento em termos de custo, qualidade e pre&ccedil;o.
+        </p>
+       </div>
+       <a class="lm wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+        <span data-en="Request a quote">
+         Pedir cota&ccedil;&atilde;o
+        </span>
+        <svg class="i">
+         <use href="#a">
+         </use>
+        </svg>
+       </a>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="processo" style="padding:1rem 0 3rem">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="How it works">
+       Como funciona
+      </span>
+      <h2 data-en="From request&lt;br&gt;to &lt;em&gt;delivery.&lt;/em&gt;">
+       Do pedido
+       <br/>
+       &agrave;
+       <em>
+        entrega.
+       </em>
+      </h2>
+     </div>
+     <div class="tm" id="tm">
+      <i class="tk">
+      </i>
+      <i class="tf">
+      </i>
+      <div class="td">
+       <span class="nd">
+       </span>
+       <h3 data-en="Identify">
+        Identificar
+       </h3>
+       <p data-en="We find the right suppliers, goods and services for you.">
+        Encontramos os fornecedores, bens e servi&ccedil;os certos para si.
+       </p>
+      </div>
+      <div class="td">
+       <span class="nd">
+       </span>
+       <h3 data-en="Negotiate">
+        Negociar
+       </h3>
+       <p data-en="Prices, terms and conditions at the best cost.">
+        Pre&ccedil;os, termos e condi&ccedil;&otilde;es ao melhor custo.
+       </p>
+      </div>
+      <div class="td">
+       <span class="nd">
+       </span>
+       <h3 data-en="Deliver">
+        Entregar
+       </h3>
+       <p data-en="Air, sea and road freight, all the way to you.">
+        Frete a&eacute;reo, mar&iacute;timo e rodovi&aacute;rio at&eacute; si.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="produtos" style="padding-bottom:3rem">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="Products and brands">
+       Produtos e marcas
+      </span>
+      <h2 data-en="Our categories.&lt;br&gt;Leading global brands.">
+       Nossas categorias.
+       <br/>
+       Marcas l&iacute;deres globais.
+      </h2>
+     </div>
+     <div class="pg st" id="pg2">
+     </div>
+    </div>
+    <div class="mq rv">
+     <div aria-label="Marcas parceiras" class="dw" id="dw" role="group" tabindex="0">
+      <b class="bl">
+       <img alt="ABB" height="50" src="assets/images/23-abb-18a14c9efa.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="3M" height="52" src="assets/images/24-3m-99ba99e817.png" width="98"/>
+      </b>
+      <b class="bl">
+       <img alt="Ansell" height="42" src="assets/images/25-ansell-60511f4833.png" width="120"/>
+      </b>
+      <b class="bl apc">
+       <i>
+        APC
+       </i>
+       <small>
+        by Schneider Electric
+       </small>
+      </b>
+      <b class="bl">
+       <img alt="Norbar" height="52" src="assets/images/26-norbar-ffcdee91d1.png" width="117"/>
+      </b>
+      <b class="bl">
+       <img alt="Castrol" height="33" src="assets/images/27-castrol-6b0b7b58d1.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="CAT" height="52" src="assets/images/28-cat-0e5e3983dd.png" width="87"/>
+      </b>
+      <b class="bl">
+       <img alt="Cisco" height="52" src="assets/images/29-cisco-a7474cb630.png" width="94"/>
+      </b>
+      <b class="bl">
+       <img alt="Dell" height="52" src="assets/images/30-dell-1e8583d297.png" width="52"/>
+      </b>
+      <b class="bl">
+       <img alt="DeWalt" height="44" src="assets/images/31-dewalt-a1a0056755.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="ESAB" height="52" src="assets/images/32-esab-585ab8bb7c.png" width="80"/>
+      </b>
+      <b class="bl">
+       <img alt="FAG" height="52" src="assets/images/33-fag-74c4196ac0.png" width="107"/>
+      </b>
+      <b class="bl">
+       <img alt="Fellowes" height="42" src="assets/images/34-fellowes-3008be77b7.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Fini" height="52" src="assets/images/35-fini-bc3dacba87.png" width="95"/>
+      </b>
+      <b class="bl">
+       <img alt="Fleetguard" height="52" src="assets/images/36-fleetguard-e94df50c9c.png" width="68"/>
+      </b>
+      <b class="bl">
+       <img alt="Yamoto" height="26" src="assets/images/37-yamoto-e2a2d4f1a0.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Fortinet" height="20" src="assets/images/38-fortinet-0a4845c84f.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Gedore" height="25" src="assets/images/39-gedore-0acdbe8d78.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Honeywell" height="29" src="assets/images/40-honeywell-c9d226e046.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="HP" height="52" src="assets/images/41-hp-8f060b3b99.png" width="52"/>
+      </b>
+      <b class="bl">
+       <img alt="Hydac" height="32" src="assets/images/42-hydac-57d3eba880.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Irwin" height="52" src="assets/images/43-irwin-772a71f96a.png" width="116"/>
+      </b>
+      <b class="bl">
+       <img alt="Jabra" height="48" src="assets/images/44-jabra-212acd4e2c.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Kaspersky" height="29" src="assets/images/45-kaspersky-5d94e44671.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Kennedy" height="52" src="assets/images/46-kennedy-108d83be3d.png" width="113"/>
+      </b>
+      <b class="bl">
+       <img alt="Legrand" height="37" src="assets/images/47-legrand-5485ad7706.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Lenovo" height="32" src="assets/images/48-lenovo-f78ca0d74a.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Lincoln Electric" height="46" src="assets/images/49-lincoln-electric-fe1a61c90f.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Koyo" height="52" src="assets/images/50-koyo-1016c20c98.png" width="97"/>
+      </b>
+      <b class="bl">
+       <img alt="Makita" height="29" src="assets/images/51-makita-c1635197a1.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Megger" height="31" src="assets/images/52-megger-fd9b15ee67.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Microsoft" height="33" src="assets/images/53-microsoft-5b03c7678d.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Molykote" height="41" src="assets/images/54-molykote-8ebe7e8a6f.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Nexans" height="35" src="assets/images/55-nexans-79441addff.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Nyrosten" height="52" src="assets/images/56-nyrosten-cd7d77fe4e.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Parker" height="30" src="assets/images/57-parker-264588b79c.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Pelican" height="34" src="assets/images/58-pelican-5bf4c2b6c1.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Plantronics" height="31" src="assets/images/59-plantronics-2b8de2e115.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Rexroth" height="52" src="assets/images/60-rexroth-021a7799cf.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Ricoh" height="29" src="assets/images/61-ricoh-e15a2684eb.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Rocol" height="52" src="assets/images/62-rocol-ae6f6c5a42.png" width="77"/>
+      </b>
+      <b class="bl">
+       <img alt="Scott Safety" height="30" src="assets/images/63-scott-safety-170564a19f.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Shell" height="49" src="assets/images/64-shell-85208256dc.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="Senator" height="40" src="assets/images/65-senator-f5aaba3672.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="TP-Link" height="51" src="assets/images/66-tp-link-4a81a5d7d6.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="uvex" height="30" src="assets/images/67-uvex-4000e3fb74.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="WIKA" height="45" src="assets/images/68-wika-1f6b0995ad.png" width="120"/>
+      </b>
+      <b class="bl">
+       <img alt="GRIPPS" height="39" src="assets/images/69-gripps-51ea5ad879.png" width="190"/>
+      </b>
+      <b class="bl">
+       <img alt="NLG" height="60" src="assets/images/70-nlg-842f048bd5.png" width="98"/>
+      </b>
+      <b class="bl">
+       <img alt="Pepperl+Fuchs" height="23" src="assets/images/71-pepperl-fuchs-7e12aa52df.png" width="190"/>
+      </b>
+      <b class="bl">
+       <img alt="Cromwell" height="60" src="assets/images/72-cromwell-f6b5c19b01.png" width="91"/>
+      </b>
+      <b class="bl">
+       <img alt="Portwest" height="46" src="assets/images/73-portwest-70c8427e0b.png" width="190"/>
+      </b>
+      <b class="bl">
+       <img alt="Red Wing Shoes" height="60" src="assets/images/74-red-wing-shoes-7dd47335fc.png" width="101"/>
+      </b>
+      <b class="bl">
+       <img alt="Iridium" height="34" src="assets/images/75-iridium-5bf7120e12.png" width="190"/>
+      </b>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="porque">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="Why Foremost?">
+       Porqu&ecirc; a Foremost?
+      </span>
+      <h2 data-en="One supplier.&lt;br&gt;Leading brands. &lt;em&gt;Best prices.&lt;/em&gt;">
+       Um s&oacute; fornecedor.
+       <br/>
+       Marcas l&iacute;deres.
+       <em>
+        Melhores pre&ccedil;os.
+       </em>
+      </h2>
+     </div>
+     <div class="wg">
+      <div class="fg st" id="fg">
+      </div>
+      <div class="cs">
+       <div class="wi tl">
+        <img alt="Carrinha a ser carregada junto a um armaz&eacute;m" src="assets/images/76-carrinha-a-ser-carregada-junto-a-um-armaz-m-2c1ffc06da.jpg"/>
+        <div class="wb g">
+         <span class="ic">
+          <svg class="i">
+           <use href="#tr">
+           </use>
+          </svg>
+         </span>
+         <span data-en="Fast deliveries nationwide">
+          Entregas r&aacute;pidas em todo o pa&iacute;s
+         </span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sec" id="contactos">
+    <div class="w">
+     <div class="sh rv">
+      <span class="pill" data-en="Contacts">
+       Contactos
+      </span>
+      <h2 data-en="Let's find the right solution for &lt;em&gt;your business.&lt;/em&gt;">
+       Vamos encontrar a solu&ccedil;&atilde;o certa para o
+       <em>
+        seu neg&oacute;cio.
+       </em>
+      </h2>
+      <p data-en="Request your quote. Send us your requirements and the Foremost team will get in touch to present the best supply solution. Talk to us on WhatsApp.">
+       Solicite a sua cota&ccedil;&atilde;o. Envie-nos os seus requisitos e a equipa Foremost entrar&aacute; em contacto consigo para apresentar a melhor solu&ccedil;&atilde;o de fornecimento. Fale connosco pelo WhatsApp.
+      </p>
+     </div>
+     <div class="cg">
+      <div class="cq">
+       <div class="mp rv">
+        <canvas aria-label="Mapa com a sede da Foremost em Maputo, Mo&ccedil;ambique" id="mp" role="img">
+        </canvas>
+       </div>
+       <div class="of st">
+        <div class="oc hq tl">
+         <h3>
+          <span class="hx">
+           <svg class="i">
+            <use href="#pn">
+            </use>
+           </svg>
+          </span>
+          <span data-en="Mozambique HQ">
+           Mo&ccedil;ambique (sede)
+          </span>
+         </h3>
+         Av. Vladimir Lenine 548 R/C, Bairro Central C, Maputo
+         <a href="tel:+258827847870">
+          +258 82 784 7870
+         </a>
+         <a href="tel:+258845502007">
+          +258 84 550 2007
+         </a>
+         <a href="mailto:info@foremost.co.mz">
+          info@foremost.co.mz
+         </a>
+        </div>
+       </div>
+      </div>
+      <form accept-charset="UTF-8" action="https://formsubmit.co/info@foremost.co.mz" class="cf rv" id="cf" method="POST" target="_blank">
+       <h3 data-en="Send your message">
+        Envie a sua mensagem
+       </h3>
+       <input name="_subject" type="hidden" value="Pedido de cota&ccedil;&atilde;o - site Foremost"/>
+       <input name="_template" type="hidden" value="table"/>
+       <input name="_captcha" type="hidden" value="false"/>
+       <input aria-hidden="true" autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+       <div class="fr">
+        <label>
+         <span data-en="Name">
+          Nome
+         </span>
+         <input autocomplete="name" name="Nome" required=""/>
+        </label>
+        <label>
+         <span data-en="Company">
+          Empresa
+         </span>
+         <input autocomplete="organization" name="Empresa"/>
+        </label>
+       </div>
+       <div class="fr">
+        <label>
+         <span data-en="Phone">
+          Telefone
+         </span>
+         <input autocomplete="tel" name="Telefone" type="tel"/>
+        </label>
+        <label>
+         <span>
+          Email
+         </span>
+         <input autocomplete="email" name="email" type="email"/>
+        </label>
+       </div>
+       <div class="fr">
+        <label>
+         <span data-en="Service">
+          Servi&ccedil;o
+         </span>
+         <select name="Servico">
+          <option data-en="Procurement">
+           Aprovisionamento
+          </option>
+          <option data-en="Trading">
+           Comercializa&ccedil;&atilde;o
+          </option>
+          <option data-en="Supply">
+           Fornecimento
+          </option>
+          <option data-en="Air, sea or road freight">
+           Frete a&eacute;reo, mar&iacute;timo ou rodovi&aacute;rio
+          </option>
+          <option data-en="Other">
+           Outro
+          </option>
+         </select>
+        </label>
+        <label>
+         <span data-en="Product category">
+          Categoria de produtos
+         </span>
+         <select id="cs" name="Categoria">
+         </select>
+        </label>
+       </div>
+       <label>
+        <span data-en="Message">
+         Mensagem
+        </span>
+        <textarea name="Mensagem" required="" rows="4"></textarea>
+       </label>
+       <div class="fa">
+        <button class="b r" type="submit">
+         <span data-en="Send message">
+          Enviar mensagem
+         </span>
+         <svg class="i">
+          <use href="#a">
+          </use>
+         </svg>
+        </button>
+        <a class="b o wl" href="https://wa.me/258827847870?text=Ol%C3%A1%20Foremost!%20Gostaria%20de%20pedir%20uma%20cota%C3%A7%C3%A3o." rel="noopener" target="_blank">
+         <svg class="i wa">
+          <use href="#wa">
+          </use>
+         </svg>
+         <span data-en="Chat on WhatsApp">
+          Conversar no WhatsApp
+         </span>
+        </a>
+       </div>
+       <p aria-live="polite" class="fn" data-en="Your message is sent by email to info@foremost.co.mz." id="ok">
+        A sua mensagem &eacute; enviada por email para info@foremost.co.mz.
+       </p>
+      </form>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="ft">
+   <div class="w">
+    <div class="fgd">
+     <div>
+      <img alt="Foremost" src="assets/images/77-foremost-10fac89423.png" style="height:1.7rem;width:auto"/>
+      <p data-en="A value company, with values.">
+       Uma empresa de valor, com valores.
+      </p>
+      <a href="https://www.foremost.co.mz">
+       www.foremost.co.mz
+      </a>
+     </div>
+     <div>
+      <h4 data-en="Explore">
+       Explorar
+      </h4>
+      <a data-en="About us" href="#sobre">
+       Sobre n&oacute;s
+      </a>
+      <a data-en="Services" href="#servicos">
+       Servi&ccedil;os
+      </a>
+      <a data-en="Products" href="#produtos">
+       Produtos
+      </a>
+      <a data-en="Why Foremost" href="#porque">
+       Porqu&ecirc; a Foremost
+      </a>
+     </div>
+     <div>
+      <h4 data-en="Mozambique HQ">
+       Mo&ccedil;ambique (sede)
+      </h4>
+      <address>
+       Av. Vladimir Lenine 548 R/C
+       <br/>
+       Bairro Central C
+       <br/>
+       Maputo, Mo&ccedil;ambique
+      </address>
+      <a href="tel:+258827847870">
+       +258 82 784 7870
+      </a>
+      <a href="tel:+258845502007">
+       +258 84 550 2007
+      </a>
+      <a href="mailto:info@foremost.co.mz">
+       info@foremost.co.mz
+      </a>
+     </div>
+    </div>
+    <div class="fb">
+     <span>
+      &copy;
+      <span id="yr">
+       2026
+      </span>
+      Foremost, Lda.
+     </span>
+     <span data-en="Procurement &amp; Supply">
+      Aprovisionamento &amp; Fornecimento
+     </span>
+    </div>
+   </div>
+  </footer>
+  <button aria-label="Voltar ao topo" id="up" title="Voltar ao topo" type="button">
+   <svg class="rg" viewbox="0 0 48 48">
+    <circle class="t" cx="24" cy="24" r="21">
+    </circle>
+    <circle class="r" cx="24" cy="24" r="21">
+    </circle>
+   </svg>
+   <svg class="i a">
+    <use href="#a">
+    </use>
+   </svg>
+  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js">
+  </script>
+  <script defer="True" src="assets/js/main.js">
+  </script>
+ </body>
+</html>

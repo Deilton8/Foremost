@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Adicione a diretiva Sitemap depois de configurar o domínio público:
+# Sitemap: https://www.seudominio.co.mz/sitemap.xml
