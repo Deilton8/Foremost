@@ -1,0 +1,5 @@
+# robots.txt de foremost.co.mz
+User-agent: *
+Allow: /
+
+Sitemap: https://foremost.co.mz/sitemap.xml

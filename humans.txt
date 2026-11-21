@@ -1,0 +1,9 @@
+/* EQUIPA */
+Empresa: Foremost, Lda.
+Local: Maputo, Moçambique
+Contacto: info@foremost.co.mz
+
+/* SITE */
+Última actualização: 2026-11-20
+Idiomas: Português (Moçambique), English
+Tecnologia: HTML5, CSS3, JavaScript, GSAP, Three.js

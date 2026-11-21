@@ -1,0 +1,81 @@
+# =====================================================================
+# Foremost — foremost.co.mz  |  Apache / LiteSpeed (cPanel, hospedagem partilhada)
+# Se o seu alojamento NÃO usar Apache/LiteSpeed, ignore este ficheiro e veja deploy/.
+# =====================================================================
+Options -Indexes
+ServerSignature Off
+AddDefaultCharset UTF-8
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+  AddType text/javascript .js
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # 1) Forçar HTTPS e domínio canónico (sem www) num único salto.
+  #    Se um dia usar outro domínio, altere "foremost.co.mz" nas duas linhas abaixo.
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteRule ^ https://foremost.co.mz%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTP_HOST} ^www\.foremost\.co\.mz$ [NC]
+  RewriteRule ^ https://foremost.co.mz%{REQUEST_URI} [R=301,L]
+  # 2) /index.html e /pasta/index.html  ->  /  e  /pasta/   (evita conteúdo duplicado)
+  RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+  RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L]
+  # 3) Bloquear ficheiros/pastas ocultos (excepto .well-known)
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-vh8Fut5Vp2uJ1DXyXOQGTmv5CK2xEmBrATmWPC5a3G0='; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always unset X-Powered-By
+  # Cache: fontes, bibliotecas e imagens (1 ano; se substituir uma imagem, mude-lhe o nome)
+  <FilesMatch "\.(?:woff2|webp|jpe?g|png|gif|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "^(?:three|gsap|ScrollTrigger)\..*\.js$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # CSS/JS do site: 30 dias (o parâmetro ?v= no HTML força a actualização)
+  <FilesMatch "^(?:styles|main|sub)\.(?:css|js)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  # HTML, sitemap e manifest: revalidar sempre
+  <FilesMatch "\.(?:html|xml|txt|webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule !mod_headers.c>
+  <IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+  </IfModule>
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript application/javascript application/json application/ld+json application/manifest+json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/ld+json application/manifest+json application/xml image/svg+xml
+</IfModule>
+
+# Não expor ficheiros internos
+<FilesMatch "(?i)\.(md|log|ini|sh|bak|sql|py|conf|example)$|^(_headers|_redirects)$">
+  Require all denied
+</FilesMatch>
