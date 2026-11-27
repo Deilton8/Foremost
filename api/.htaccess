@@ -1,0 +1,7 @@
+# Protege a configuração e evita cache nas respostas da API
+<Files "config.php">
+  Require all denied
+</Files>
+<IfModule mod_headers.c>
+  Header always set Cache-Control "no-store"
+</IfModule>

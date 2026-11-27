@@ -253,3 +253,28 @@ html.mo{overflow:hidden}
 .ctr p{color:var(--mut);max-width:34rem}.ctr .fm{margin-top:.6rem}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pz{display:none}}
 @media print{.nv,#sm,#up,.skip,.pz,canvas,.hxs,#pg,.gv,.mq,.ll,.cf{display:none!important}body{background:#fff}.js .rv,.js .st>*{opacity:1!important;transform:none!important}.sec{padding:1.5rem 0}.hero{min-height:0}}
+
+/* ===== DESEMPENHO: o texto do hero (LCP) aparece de imediato e cortam-se custos de pintura ===== */
+.hl p.fi{animation:none!important}
+.fi{animation-duration:.6s!important;animation-delay:calc(.04s + .05s*var(--i,0))!important}
+.ln b{animation-duration:.8s!important;animation-delay:calc(.02s + .07s*var(--i,0))!important}
+h1 em{animation:none!important}
+.sc:after{animation:none!important}
+@media(hover:hover){.sc:hover:after{animation:ro 5s linear 1!important}}
+.pill:before{animation-name:pu2!important}
+@keyframes pu2{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}}
+.hxs:before{content:'';position:absolute;inset:0;background:radial-gradient(circle,rgba(23,24,28,.15) 1.2px,rgba(23,24,28,0) 1.8px) 1px 1px/30px 30px;-webkit-mask-image:radial-gradient(75% 85% at 45% 45%,#000,transparent);mask-image:radial-gradient(75% 85% at 45% 45%,#000,transparent)}
+.hxs.dgon:before{opacity:0}
+.hero:before{filter:none!important}
+.b.r:after,.fm .b:after{left:-60%;transform:translateX(0) skewX(-20deg)!important;animation-name:shm2!important}
+@keyframes shm2{60%,100%{transform:translateX(500%) skewX(-20deg)}}
+@media(max-width:1023px){.sc,.g,.mvt button{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}}
+/* animações decorativas infinitas só arrancam depois de o utilizador interagir (ou 8 s): a página fica "quieta" no carregamento */
+.hb,.pill:before,.b.r:after,.fm .b:after,.hero:before{animation-play-state:paused!important}
+.fx .hb,.fx .pill:before,.fx .b.r:after,.fx .fm .b:after,.fx .hero:before{animation-play-state:running!important}
+/* reserva a altura do marquee de marcas (o JS usa os mesmos valores): evita deslocamentos de layout (CLS) */
+.js .dw:not(.on){height:400px;overflow:hidden}
+@media(max-width:699px){.js .dw:not(.on){height:300px}}
+#gp{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .6s}
+.gv.pst #gp{opacity:1}.gv.pst:before{opacity:0}.gv.rdy #gp{opacity:0}
+.st>:nth-child(1){--k:0}.st>:nth-child(2){--k:1}.st>:nth-child(3){--k:2}.st>:nth-child(4){--k:3}.st>:nth-child(5){--k:4}.st>:nth-child(6){--k:5}.st>:nth-child(7){--k:6}.st>:nth-child(8){--k:7}.st>:nth-child(9){--k:8}.st>:nth-child(10){--k:9}.st>:nth-child(11){--k:10}.st>:nth-child(12){--k:11}.st>:nth-child(13){--k:12}.st>:nth-child(14){--k:13}
